@@ -1,0 +1,46 @@
+.nav {
+  margin-bottom: 1em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+}
+
+.nav-item a, a.nav-item {
+  font-size: 1.3em;
+  color: #00d1b2;
+}
+
+.nav-item a, a.nav-brand {
+  font-size: 1.8em;
+  color: #00d1b2;
+}
+
+.content h1 {
+  margin-bottom: 1em;
+}
+.content {
+  /*margin-top: 1em;*/
+  margin-bottom: 2em;
+}
+
+.image.is-2by1 {
+  margin-top: -1em;
+  margin-bottom: 2em;
+}
+
+.is-cta {
+    cursor: pointer;
+}
+
+.footer-text {
+  text-transform: uppercase;
+}
+
+.is-facebook {
+  background-color: #3b599c;
+  color: #ffffff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin: 0 3px;
+  text-align: center;
+}

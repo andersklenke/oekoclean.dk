@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kontakt os</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css" integrity="sha256-6ZFIKt0ohcBorQWIruhlYBoADBIFrJuXtEJsjFxb2Wk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+  <div id="app">
+    <navbar></navbar>
+
+    <div class="container">
+      <div class="content is-medium">
+        <h1>Kontakt</h1>
+        <p>
+          Har du spørgsmål, eller ønsker du et tilbud på en rengøringsopgave? Udfyld formularen nedenfor - så kontakter vi dig hurtigst muligt.
+        </p>
+
+        <form action="https://formspree.io/afklenke@gmail.com" method="POST">
+          <label class="label">Navn</label>
+          <p class="control">
+            <input class="input is-large" type="text" name="name" placeholder="Dit navn" autofocus>
+          </p>
+
+          <label class="label">E-mailadresse eller telefonnummer</label>
+          <p class="control">
+            <input class="input is-large" type="text" name="_replyto" placeholder="Din e-mailadresse eller dit telefonnummer">
+          </p>
+
+          <label class="label">Besked</label>
+          <p class="control">
+            <textarea class="textarea is-large" name="besked" placeholder="Din besked"></textarea>
+          </p>
+
+          <p class="control">
+            <input type="submit" value="Send besked" class="button is-large is-primary">
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <footer-view></footer-view>
+  </div>
+
+  <script src="js/vue.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
