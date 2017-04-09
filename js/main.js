@@ -5,6 +5,16 @@ Vue.component('navbar', {
     <div class="container">
       <div class="nav-left">
         <a href="index.html" class="nav-item nav-brand"><strong>Øko Clean</strong></a>
+      </div>
+
+      <label for="menu-toggle" class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <input type="checkbox" id="menu-toggle" class="is-hidden"/>
+
+      <div class="nav-right nav-menu">
         <a href="hvorfor-oekologisk-rengoering.html" class="nav-item">Hvorfor økologi?</a>
         <a href="rengoering-tilbud.html" class="nav-item">Vi tilbyder</a>
         <a href="om-oekoclean.html" class="nav-item">Om os</a>
