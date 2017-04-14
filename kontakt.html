@@ -33,35 +33,52 @@
       </div>
     </nav>
 
-    <section class="section">
+    <section class="section" id="form-section">
       <div class="container">
         <div class="content is-medium">
           <h1>Kontakt</h1>
-          <p>
+          <p class="is-hidden-mobile">
             Har du spørgsmål, eller ønsker du et uforpligtende tilbud på en rengøringsopgave? Udfyld formularen nedenfor - så kontakter vi dig hurtigst muligt.
           </p>
 
-          <form action="https://formspree.io/afklenke@gmail.com" method="POST">
-            <label class="label">Navn</label>
+          <form id="gform" action="https://script.google.com/macros/s/AKfycbyzWl7mp41uJh-2pQMMNzUgJwh2HCSwFsHXeeBz9egUGubRmMA/exec" method="POST">
+            <label class="label">* Navn</label>
             <p class="control">
-              <input class="input is-large" type="text" name="name" placeholder="Dit navn" autofocus>
+              <input class="input is-large" type="text" name="navn" placeholder="Dit navn" autofocus v-model="form.name" required>
             </p>
 
-            <label class="label">E-mailadresse eller telefonnummer</label>
+            <label class="label">* E-mailadresse eller telefonnummer</label>
             <p class="control">
-              <input class="input is-large" type="text" name="_replyto" placeholder="Din e-mailadresse eller dit telefonnummer">
+              <input class="input is-large" type="text" name="kontakt information" placeholder="Din e-mailadresse eller dit telefonnummer" v-model="form.contactInfo" required>
             </p>
 
-            <label class="label">Besked</label>
+            <label class="label">* Besked</label>
             <p class="control">
-              <textarea class="textarea is-large" name="besked" placeholder="Din besked"></textarea>
+              <textarea class="textarea is-large" name="besked" placeholder="Din besked" v-model="form.message" required></textarea>
             </p>
 
             <p class="control">
-              <input type="submit" value="Send besked" class="button is-large is-primary">
+              <input type="submit" value="Send besked" class="button is-large is-primary" :disabled="!formValid">
             </p>
           </div>
         </form>
+      </div>
+    </section>
+
+    <section class="hero is-primary is-large has-text-centered thank-you" id="thankyou_message" style="display:none;">
+      <div class="hero-body">
+        <div class="container">
+          <figure class="image is-100x100">
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+          </figure>
+
+          <h1 class="title">
+            Tak for din henvendelse!
+          </h1>
+          <h2 class="subtitle">
+            Vi vender tilbage med svar snarest muligt.
+          </h2>
+        </div>
       </div>
     </section>
 
@@ -70,6 +87,7 @@
 
   <script src="js/vue.js"></script>
   <script src="js/main.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

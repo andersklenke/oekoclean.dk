@@ -47,5 +47,23 @@ Vue.component('cta-box', {
 });
 
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+
+  data: {
+    form: {
+      name: '',
+      contactInfo: '',
+      message: ''
+    }
+  },
+
+  computed: {
+    formValid: function() {
+      if (this.form.name != '' && this.form.contactInfo != '' && this.form.message != '') {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
 });
