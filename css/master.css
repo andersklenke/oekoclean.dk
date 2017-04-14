@@ -8,6 +8,44 @@
   }
 }
 
+.hero-body {
+  align-items: center;
+}
+
+.hero-frontpage {
+  margin-top: -1em;
+  background-image: url("../images/oekoclean_stue.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+@media screen and (max-width: 450px) {
+  .hero-frontpage {
+    background-image: url("../images/oekoclean_stue_small.jpg");
+    background-position: center;
+  }
+}
+
+.hero-frontpage .title {
+  font-size: 5em;
+  background-color:rgba(255, 255, 255, 0.8)
+}
+
+.hero-frontpage .subtitle {
+  font-size: 2em;
+  background-color:rgba(255, 255, 255, 0.8)
+}
+
+@media screen and (max-width: 450px) {
+  .hero-frontpage .title {
+    font-size: 3em;
+  }
+  .hero-frontpage .subtitle {
+    font-size: 1.5em;
+  }
+}
+
 .nav {
   margin-bottom: 1em;
   padding-top: 0.7em;
