@@ -32,7 +32,7 @@ Vue.component('cta-box', {
       <div class="container">
         <a href="kontakt.html">
           <h1 class="title">Klik her</h1>
-          <h2 class="subtitle">og få et uforpligende tilbud</h2>
+          <h2 class="subtitle">og få et uforpligtende tilbud</h2>
         </a>
       </div>
     </div>
