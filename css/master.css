@@ -12,12 +12,15 @@
 
 .nav-item a, a.nav-item {
   font-size: 1.3em;
-  color: #00d1b2;
 }
 
 .nav-item a, a.nav-brand {
   font-size: 1.8em;
-  color: #00d1b2;
+  color: green;
+}
+
+.nav-item a, a.nav-brand:hover {
+  color: green;
 }
 
 .content h1 {
