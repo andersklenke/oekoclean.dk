@@ -1,3 +1,22 @@
+@media screen and (min-width: 1000px) {
+  .container {
+    margin: 0 auto;
+    width: 960px;
+  }
+}
+
+@media screen and (min-width: 1192px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media screen and (min-width: 1384px) {
+  .container {
+    width: 960px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #menu-toggle:checked + .nav-menu {
     display: block;
@@ -14,16 +33,15 @@
 
 .hero-frontpage {
   margin-top: -1em;
-  background-image: url("../images/oekoclean_stue.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-image: url("../images/oekoclean_stue_small.jpg");
   background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 400px) {
   .hero-frontpage {
-    background-image: url("../images/oekoclean_stue_small.jpg");
-    background-position: center;
+    background-image: url("../images/oekoclean_stue.jpg");
+    background-attachment: fixed;
   }
 }
 
