@@ -51,6 +51,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
       console.log(xhr.responseText);
       document.getElementById('form-section').style.display = 'none'; // hide form
       document.getElementById('thankyou_message').style.display = 'block';
+      ga('send', 'event', 'Contact form', 'submitted');
       return;
   };
   // url encode form data for sending as post data
