@@ -1,6 +1,5 @@
-Vue.component('footer-view', {
-  template:
-  `
+Vue.component("footer-view", {
+  template: `
   <footer class="footer">
     <div class="container">
       <div class="content">
@@ -9,8 +8,8 @@ Vue.component('footer-view', {
             <span class="footer-text">
               <strong>Øko Clean</strong> • Cvr 33799349 – Tlf. 27 28 92 53 – <a href="mailto:lena@oekoclean.dk">lena@oekoclean.dk</a><br>
               <address>
-              Halkærvej 25<br>
-              3660 Stenløse
+              Udlejrevej 31, port 1B<br>
+              3650 Ølstykke
               </address>
             </span>
           </div>
@@ -24,9 +23,8 @@ Vue.component('footer-view', {
   `
 });
 
-Vue.component('cta-box', {
-  template:
-  `
+Vue.component("cta-box", {
+  template: `
   <section class="hero is-small is-cta is-primary is-bold" @click="gotoContact">
     <div class="hero-body has-text-centered">
       <div class="container">
@@ -47,19 +45,23 @@ Vue.component('cta-box', {
 });
 
 var app = new Vue({
-  el: '#app',
+  el: "#app",
 
   data: {
     form: {
-      name: '',
-      contactInfo: '',
-      message: ''
+      name: "",
+      contactInfo: "",
+      message: ""
     }
   },
 
   computed: {
     formValid: function() {
-      if (this.form.name != '' && this.form.contactInfo != '' && this.form.message != '') {
+      if (
+        this.form.name != "" &&
+        this.form.contactInfo != "" &&
+        this.form.message != ""
+      ) {
         return true;
       } else {
         return false;
