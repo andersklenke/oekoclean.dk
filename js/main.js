@@ -8,8 +8,8 @@ Vue.component("footer-view", {
             <span class="footer-text">
               <strong>Øko Clean</strong> • Cvr 33799349 – Tlf. 27 28 92 53 – <a href="mailto:lena@oekoclean.dk">lena@oekoclean.dk</a><br>
               <address>
-              Udlejrevej 31, port 1B<br>
-              3650 Ølstykke
+              Salsmosevej 20<br>
+              3660 Stenløse
               </address>
             </span>
           </div>
