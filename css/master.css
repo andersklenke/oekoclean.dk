@@ -47,12 +47,12 @@
 
 .hero-frontpage .title {
   font-size: 5em;
-  background-color:rgba(255, 255, 255, 0.8)
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .hero-frontpage .subtitle {
   font-size: 2em;
-  background-color:rgba(255, 255, 255, 0.8)
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (max-width: 450px) {
@@ -70,16 +70,19 @@
   padding-bottom: 0.7em;
 }
 
-.nav-item a, a.nav-item {
+.nav-item a,
+a.nav-item {
   font-size: 1.3em;
 }
 
-.nav-item a, a.nav-brand {
+.nav-item a,
+a.nav-brand {
   font-size: 1.8em;
   color: green;
 }
 
-.nav-item a, a.nav-brand:hover {
+.nav-item a,
+a.nav-brand:hover {
   color: green;
 }
 
@@ -123,7 +126,7 @@
   stroke-miterlimit: 10;
   stroke: white;
   fill: none;
-  animation: stroke .6s cubic-bezier(0.650, 0.000, 0.450, 1.000) forwards;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
 }
 
 .checkmark {
@@ -136,14 +139,15 @@
   stroke-miterlimit: 10;
   margin: 10% auto;
   box-shadow: inset 0px 0px 0px green;
-  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+  animation: fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
 }
 
 .checkmark__check {
   transform-origin: 50% 50%;
   stroke-dasharray: 48;
   stroke-dashoffset: 48;
-  animation: stroke .3s cubic-bezier(0.650, 0.000, 0.450, 1.000) .8s forwards;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
 }
 
 @keyframes stroke {
@@ -153,7 +157,8 @@
 }
 
 @keyframes scale {
-  0%, 100% {
+  0%,
+  100% {
     transform: none;
   }
   50% {
@@ -172,4 +177,15 @@
   width: 100px;
   margin: auto;
   width: 50%;
+}
+
+.bd-notice {
+  background-color: #00d1b2;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+.bd-notice strong {
+  color: #fff;
 }
