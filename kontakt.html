@@ -57,7 +57,10 @@
             Har du spørgsmål, eller ønsker du et uforpligtende tilbud på en rengøringsopgave? Udfyld formularen nedenfor - så kontakter vi dig hurtigst muligt.
           </p>
 
-          <form id="gform" action="https://script.google.com/macros/s/AKfycbw5i0AwYEOOywUsHBgtcUxjqswbhqeXll1KEyhDUL8xzTSULJo/exec" method="POST">
+          <form id="gform" action="https://formsubmit.co/mail@andersklenke.com" method="POST" target="_blank">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_subject" value="Oekoclean.dk kontaktformular">
+
             <label class="label">* Navn</label>
             <p class="control">
               <input class="input is-large" type="text" name="navn" placeholder="Dit navn" autofocus v-model="form.name" required>
@@ -65,7 +68,7 @@
           
             <label class="label">* E-mailadresse</label>
             <p class="control">
-              <input class="input is-large" type="email" name="kontakt information" placeholder="Din e-mailadresse" v-model="form.contactInfo" required>
+              <input class="input is-large" type="email" name="email" placeholder="Din e-mailadresse" v-model="form.contactInfo" required>
             </p>
           
             <label class="label">* Besked</label>
